@@ -1,0 +1,23 @@
+{
+  "name": "workout-friends",
+  "version": "1.0.0",
+  "description": "Workout weekly routine with friends via blogs and points",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkturner1220/Workout-Friends.git"
+  },
+  "keywords": [
+    "workout",
+    "friends"
+  ],
+  "author": "Christian Gonzalez, Gabe L'Herault, Brian Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bkturner1220/Workout-Friends/issues"
+  },
+  "homepage": "https://github.com/bkturner1220/Workout-Friends#readme"
+}
