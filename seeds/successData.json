@@ -1,27 +1,27 @@
 [
     {
-      "name": "phil5000",
-      "completed": " concert is."
+      "user_id": 2,
+      "routine_id": 4
     },
     {
-      "name": "SharonTheBeast",
-      "completed": "A mobileficn your area."
+      "user_id": 3,
+      "routine_id": 6
     },
     {
-      "name": "KellyG",
-      "completed": "A mobil concert is playing in your area."
+      "user_id": 9,
+      "routine_id": 8
     },
     {
-      "name": "CarlMoney",
-      "completed": "A mobile concert is playing in your area."
+      "user_id": 2,
+      "routine_id": 13
     },
     {
-      "name": "phil5000",
-      "completed": "A mobile concert is playing in your area."
+      "user_id": 1,
+      "routine_id": 15
     },
     {
-      "name": "KellyG",
-      "completed": "A mobile concert is playing in your area."
+      "user_id": 6,
+      "routine_id": 17
     } 
 ]
   

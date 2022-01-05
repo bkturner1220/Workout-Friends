@@ -11,36 +11,18 @@ Success.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    user_id: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'user',
-        key: 'id'
-      },
-    },
-    completed: {
-      type: DataTypes.STRING(500),
-      allowNull: false,
-      references: {
-        model: 'Daily',
         key: 'id',
-        through: {
-          model: 'tasklist',
-          key: 'id'
-        },
       },
     },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-      user_id: {
-        type: DataTypes.STRING,
-        references: {
-          model: 'user',
-          key: 'id',
-        },
+    routine_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'routine',
+        key: 'id',
       },
     },
   },
