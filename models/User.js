@@ -20,21 +20,40 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    height: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    weight: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    score: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    healthplan_id: {
+    type: DataTypes.INTEGER,
+      references: { 
+        model: 'healthplan',
+        key: 'id'
+      },   
+    },
     email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [8],
-      },
-    },
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+    validate: {
+    isEmail: true,
+  },
+},
+  password: {
+  type: DataTypes.STRING,
+  allowNull: false,
+  validate: {
+    len: [8],
+  },
+},
   },
   {
     hooks: {
