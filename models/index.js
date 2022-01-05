@@ -1,37 +1,34 @@
 const User = require('./User');
-const Success = require('./Success');
-const Comment = require('./Comment');
 const Healthplan = require('./Healthplan');
-const Daily = require('./Daily');
+const Routine = require('./Routine');
+// const Success = require('./Success');
+// const Comment = require('./Comment');
 
-User.hasOne(Healthplan, {
+User.belongsTo(Healthplan, {
   foreignKey: 'healthplan_id'
 });
 
-Healthplan.hasMany(User, {
-  foreignKey: 'user_id'
-});
+Healthplan.hasMany(User);
 
-Daily.belongsTo(Healthplan, {
+Routine.belongsTo(Healthplan, {
   foreignKey: 'healthplan_id'
 });
 
-Healthplan.hasMany(Daily, {
-});
+// Healthplan.hasMany(Routine);
 
-User.hasMany(Success, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
-});
+// User.hasMany(Success, {
+//   foreignKey: 'user_id',
+//   onDelete: 'CASCADE'
+// });
 
-Success.belongsTo(User, {
-  foreignKey: 'user_id'
-});
+// Success.belongsTo(User, {
+//   foreignKey: 'user_id'
+// });
 
-Success.hasMany(Comment);
+// Success.hasMany(Comment);
 
-Comment.belongsTo(Success, {
-  foreignKey: 'success_id'
-});
+// Comment.belongsTo(Success, {
+//   foreignKey: 'success_id'
+// });
 
-module.exports = { User, Success, Comment, Healthplan, Daily };
+module.exports = { User, Healthplan, Routine };

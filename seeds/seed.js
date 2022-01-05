@@ -1,29 +1,44 @@
 const sequelize = require('../config/connection');
-const { User, Success, Comment, Healthplan } = require('../models');
+const { User, Healthplan, Routine } = require('../models');
 
 const userData = require('./userData.json');
-const successData = require('./successData.json');
-const commentData = require('./commentData.json');
+const healthplanData = require('./healthplanData.json');
+const maintainData = require('./maintainData.json');
+const gainmuscleData = require('./gainmuscleData.json');
+const weightlossData = require('./weightlossData.json');
+// const successData = require('./successData.json');
+// const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const users = await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
-  });
-
-  for (const success of successData) {
-    await Success.create({
-      ...success,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+  for (const healthplan of healthplanData) {
+    const newHealthplan = await Healthplan.create({
+      ...healthplan
+      // user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
-  for (const comment of commentData) {
-    await Comment.create({
-      ...comment,
-      article_id:Math.floor(Math.random() * articleData.length + 1),
+  const users = await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
+  })
+  
+  for (const routine of maintainData) {
+   const newRoutine = await Routine.create({
+      ...routine,
+    });
+  }
+
+  for (const routine of gainmuscleData) {
+    const newRoutine = await Routine.create({
+      ...routine,
+    });
+  }
+
+  for (const routine of weightlossData) {
+    const newRoutine = await Routine.create({
+      ...routine,
     });
   }
 

@@ -4,7 +4,7 @@
       "height": "6 feet",
       "weight": 138,
       "score" : 1000,
-      "healthplan": 2,
+      "healthplan_id": 2,
       "email": "sal@hotmail.com",
       "password": "password12345"
     },
@@ -13,7 +13,7 @@
       "height": "5 feet 6 inches",
       "weight": 148,
       "score" : 1200,
-      "healthplan": 3,
+      "healthplan_id": 3,
       "email": "notkaren@gmail.com",
       "password": "password12345"
     },
@@ -22,7 +22,7 @@
       "height": "6 feet 2 inches",
       "weight": 195,
       "score" : 1800,
-      "healthplan": 1,
+      "healthplan_id": 1,
       "email": "cmon@hotmail.com",
       "password": "password12345"
     },
@@ -31,7 +31,7 @@
       "height": "5 feet 2 inches",
       "weight": 152,
       "score" : 2100,
-      "healthplan": 2,
+      "healthplan_id": 2,
       "email": "saxthephone@gmail.com",
       "password": "password12345"
     }

@@ -1,14 +1,15 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Daily extends Model { }
+class Routine extends Model { }
 
-Daily.init(
+Routine.init(
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
+      autoIncrement: true,
     },
     healthplan_id: {
       type: DataTypes.INTEGER,
@@ -40,8 +41,8 @@ Daily.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'daily',
+    modelName: 'routine',
   }
 );
 
-module.exports = Daily;
+module.exports = Routine;

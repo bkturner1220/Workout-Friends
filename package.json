@@ -5,13 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run test",
-<<<<<<< HEAD
-    "start": "node server.js",
-    "seeds": "node seeds/seed.js"
-=======
-    "seed": "npm run seed",
+    "seeds": "node seeds/seed.js",
     "watch": "nodemon server.js"
->>>>>>> main
   },
   "repository": {
     "type": "git",
@@ -21,24 +16,11 @@
     "workout",
     "friends"
   ],
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "connect-session-sequelize": "^7.0.4",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "express-session": "^1.17.1",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
-  },
   "author": "Christian Gonzalez, Gabe L'Herault, Brian Turner",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bkturner1220/Workout-Friends/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/bkturner1220/Workout-Friends#readme"
-=======
   "homepage": "https://github.com/bkturner1220/Workout-Friends#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -58,5 +40,4 @@
     "nodemon": "^2.0.15",
     "prettier": "^2.1.2"
   }
->>>>>>> main
 }

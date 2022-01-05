@@ -33,10 +33,10 @@ User.init(
       allowNull: false,
     },
     healthplan_id: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
       references: { 
         model: 'healthplan',
-        key: 'name'
+        key: 'id'
       },   
     },
     email: {
