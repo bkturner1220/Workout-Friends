@@ -15,7 +15,6 @@ const seedDatabase = async () => {
   for (const healthplan of healthplanData) {
     const newHealthplan = await Healthplan.create({
       ...healthplan
-      // user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
