@@ -28,10 +28,6 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: true,
     },
-    score: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     healthplan_id: {
     type: DataTypes.INTEGER,
       references: { 

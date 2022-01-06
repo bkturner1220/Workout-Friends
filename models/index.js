@@ -17,6 +17,10 @@ Routine.belongsTo(Healthplan, {
 
 User.belongsToMany(Routine, { through: Win });
 Routine.belongsToMany(User, { through: Win });
+User.hasMany(Win);
+Win.belongsTo(User);
+Routine.hasMany(Win);
+Win.belongsTo(Routine);
 
 
 module.exports = { User, Healthplan, Routine, Task, Win };
