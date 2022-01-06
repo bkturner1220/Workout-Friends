@@ -23,17 +23,13 @@ Routine.init(
       type: DataTypes.INTEGER,
       allowNull: false,    
     },
-    taskA: {
-      type: DataTypes.STRING,
-      allowNull: false,    
-    },
-    taskB: {
-      type: DataTypes.STRING,
-      allowNull: false,    
-    },
-    taskC: {
-      type: DataTypes.STRING,
-      allowNull: false,    
+    task_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+        references: {
+          model: 'task',
+          key: 'id',
+        },     
     },
   },
   {
