@@ -41,8 +41,8 @@
 <header class="header" style="padding-bottom: 50px; padding-top: 50px; height: 150px;">
 <div class="page-header green lighten-1">
         <div class="caption right-align header-caption" style="padding-right: 60px;">
-            <h4 class="white-text right-align headerchild1" style="font-weight: 600; font-size: 30px; padding-bottom: 10px;">(user's name)</h4>
-                <i class="material-icons white-text account-circle" style="font-size: 60px; padding-right: 50px;">account_circle</i>
+            <h4 class="white-text right-align headerchild1" style="font-weight: 600; font-size: 25px; padding-bottom: 10px;">(user's name)</h4>
+                <i class="material-icons white-text account-circle" style="font-size: 65px; padding-right: 40px;">account_circle</i>
 
     </div>
   </div>
@@ -68,80 +68,51 @@
 </div>
 <div class="container table">
  <table>
+   <!-- Table Header -->
         <thead>
           <tr>
-            <td style="font-weight: bolder; padding-left: 10px; font-size: larger;">table item</th>
-              <th style="font-size: larger;">table item</th>
-              <th style="font-size: larger;">table item</th>
+            <td style="font-weight: bolder; padding-left: 20px; font-size: larger;">Day of the week</th>
+              <th style="font-size: larger;padding-left: 200px;">Task</th>
+              <th style="font-size: larger;padding-left: 100px;"></th>
           </tr>
         </thead>
-
+<!-- Table Contents -->
         <tbody>
           <tr>
-            <td style="font-weight: bolder; padding-left: 10px;">Monday</td>
-            <td>Item</td>
-            <td>Item</td>
+            <td style="font-weight: bolder; padding-left: 60px;">Monday</td>
+            <td><ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Red</span>
+                </label>
+                <span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Red</span>
+                </label><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Red</span>
+                </label><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+            </ul></td>
             <td><label>
                 <input type="checkbox"/>
-                <span>Completed!</span>
               </label>
             </td>
             <td>
                 <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
             </td>
           </tr>
-          <tr>
-            <td style="font-weight: bolder; padding-left: 10px;" >Tuesday</td>
-            <td>Item</td>
-            <td>Item</td>
-            <td><label>
-                <input type="checkbox"/>
-                <span>Completed!</span>
-              </label>
-            </td>
-            <td>
-                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
-            </td>
-          </tr>
-          <tr>
-            <td style="font-weight: bolder; padding-left: 10px;" >Wednesday</td>
-            <td>Item</td>
-            <td>Item</td>
-            <td><label>
-                <input type="checkbox"/>
-                <span>Completed!</span>
-              </label>
-            </td>
-            <td>
-                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
-            </td>
-          </tr>
-          <tr>
-            <td style="font-weight: bolder; padding-left: 10px;" >Thursday</td>
-            <td>Item</td>
-            <td>Item</td>
-            <td><label>
-                <input type="checkbox"/>
-                <span>Completed!</span>
-              </label>
-            </td>
-            <td>
-                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
-            </td>
-          </tr>
-          <tr>
-            <td style="font-weight: bolder; padding-left: 10px;" >Friday</td>
-            <td>Item</td>
-            <td>Item</td>
-            <td><label>
-                <input type="checkbox"/>
-                <span>Completed!</span>
-              </label>
-            </td>
-            <td>
-                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
-            </td>
-          </tr>
+
         </tbody>
       </table>
     </div>

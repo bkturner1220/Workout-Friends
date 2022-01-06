@@ -17,3 +17,7 @@ $('.carousel.carousel-slider').carousel({
 $(document).ready(function(){
   $('.fixed-action-btn').floatingActionButton();
 });
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
