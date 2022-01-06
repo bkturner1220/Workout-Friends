@@ -1,44 +1,107 @@
 [
-    {
-      "healthplan_id": 3,
-      "day": 1,
-      "taskA": "Run 2 miles",
-      "taskB": "20 pushups",
-      "taskC": "Walk 30 minutes"
-    },
-    {
-      "healthplan_id": 3,
-      "day": 2,
-      "taskA": "Run 2 miles",
-      "taskB": "20 pushups",
-      "taskC": "Walk 30 minutes"
-    },
-    {
-      "healthplan_id": 3,
-      "day": 3,
-      "taskA": "Run 2 miles",
-      "taskB": "20 pushups",
-      "taskC": "Walk 30 minutes"
-    },
-    {
-      "healthplan_id": 3,
-      "day": 4,
-      "taskA": "Run 2 miles",
-      "taskB": "20 pushups",
-      "taskC": "Walk 30 minutes"
-    },
-    {
-      "healthplan_id": 3,
-      "day": 5,
-      "taskA": "Run 2 miles",
-      "taskB": "20 pushups",
-      "taskC": "Walk 30 minutes"
-    },
-    {
-      "healthplan_id": 3,
-      "day": 6,
-      "taskA": "Run 2 miles",
-      "taskB": "20 pushups",
-      "taskC": "Walk 30 minutes"
-    }
+  {
+    "healthplan_id": 3,
+    "day": 1,
+    "task_id": 1
+  },
+  {
+    "healthplan_id": 3,
+    "day": 1,
+    "task_id": 26
+  },
+  {
+    "healthplan_id": 3,
+    "day": 1,
+    "task_id": 3
+  },
+  {
+    "healthplan_id": 3,
+    "day": 2,
+    "task_id": 4
+  },
+  {
+    "healthplan_id": 3,
+    "day": 2,
+    "task_id": 5
+  },
+  {
+    "healthplan_id": 3,
+    "day": 2,
+    "task_id": 24
+  },
+  {
+    "healthplan_id": 3,
+    "day": 3,
+    "task_id": 10
+  },
+  {
+    "healthplan_id": 3,
+    "day": 3,
+    "task_id": 20
+  },
+  {
+    "healthplan_id": 3,
+    "day": 3,
+    "task_id": 3
+  },
+  {
+    "healthplan_id": 3,
+    "day": 4,
+    "task_id": 10
+  },
+  {
+    "healthplan_id": 3,
+    "day": 4,
+    "task_id": 12
+  },
+  {
+    "healthplan_id": 3,
+    "day": 4,
+    "task_id": 23
+  },
+  {
+    "healthplan_id": 3,
+    "day": 5,
+    "task_id": 14
+  },
+  {
+    "healthplan_id": 3,
+    "day": 5,
+    "task_id": 17
+  },
+  {
+    "healthplan_id": 3,
+    "day": 5,
+    "task_id": 6
+  },
+  {
+    "healthplan_id": 3,
+    "day": 6,
+    "task_id": 28
+  },
+  {
+    "healthplan_id": 3,
+    "day": 6,
+    "task_id": 5
+  },
+  {
+    "healthplan_id": 3,
+    "day": 6,
+    "task_id": 13
+  },
+  {
+    "healthplan_id": 3,
+    "day": 7,
+    "task_id": 23
+  },
+  {
+    "healthplan_id": 3,
+    "day": 7,
+    "task_id": 3
+  },
+  {
+    "healthplan_id": 3,
+    "day": 7,
+    "task_id": 14
+  }
 ]
