@@ -1,0 +1,73 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.header-caption {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+  height: 150px;
+}
+
+.headerchild2 {
+padding-bottom: 20px;
+}
+
+.accountbox {
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  height: 120px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: blue;
+  margin-top: 100px;
+
+
+}
+
+.table {
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1.5px 2px #888888;
+
+}
+
+.logo {
+  display: inline;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar {
+  font-weight: bolder;
+}
+
+.carousel {
+background-color: coral;
+}
+
+.card-panel {
+max-width: 50%;
+justify-content: end;
+
+
+}
+
+.card2 {
+  max-width: 50%;
+  left: auto;
+  right: 0;
+  }
