@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Healthplan, Routine, Task } = require('../models');
+const { User, Healthplan, Routine, Task, Win } = require('../models');
 
 const userData = require('./userData.json');
 const healthplanData = require('./healthplanData.json');
@@ -7,9 +7,8 @@ const maintainData = require('./maintainData.json');
 const gainmuscleData = require('./gainmuscleData.json');
 const weightlossData = require('./weightlossData.json');
 const taskData = require('./taskData.json');
+const winData = require('./winData.json');
 
-// const successData = require('./successData.json');
-// const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -49,11 +48,11 @@ const seedDatabase = async () => {
     });
   }
 
-  // for (const success of successData) {
-  //   const newSuccess = await Success.create({
-  //     ...success
-  //   });
-  // }
+  for (const win of winData) {
+    const newWin = await Win.create({
+      ...win,
+    });
+  }
 
   process.exit(0);
 };

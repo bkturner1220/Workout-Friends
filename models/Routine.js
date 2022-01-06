@@ -26,10 +26,10 @@ Routine.init(
     task_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: 'task',
-        key: 'id',
-      },        
+        references: {
+          model: 'task',
+          key: 'id',
+        },     
     },
   },
   {

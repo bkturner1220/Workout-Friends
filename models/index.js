@@ -19,5 +19,4 @@ User.belongsToMany(Routine, { through: Win });
 Routine.belongsToMany(User, { through: Win });
 
 
-
 module.exports = { User, Healthplan, Routine, Task, Win };

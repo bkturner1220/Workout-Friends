@@ -15,6 +15,10 @@ Task.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    points: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize,
