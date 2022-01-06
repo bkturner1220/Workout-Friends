@@ -16,6 +16,8 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const wins = winData.map((win) => win.get({ plain: true }));
+    console.log(wins);
+    console.log("hello world");
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
@@ -23,6 +25,8 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in 
     });
   } catch (err) {
+    console.log("CAN YOU SEE ME");
+    console.log(err);
     res.status(500).json(err);
   }
 });
