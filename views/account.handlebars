@@ -1,44 +1,88 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+
+
+
+
+<header class="header" style="padding-bottom: 50px; padding-top: 50px; height: 150px;">
+<div class="page-header green lighten-1">
+        <div class="caption right-align header-caption" style="padding-right: 60px;">
+            <h4 class="white-text right-align headerchild1" style="font-weight: 600; font-size: 25px; padding-bottom: 10px;">{{name}}</h4>
+                <i class="material-icons white-text account-circle" style="font-size: 65px; padding-right: 40px;">account_circle</i>
+    </div>
   </div>
-</div>
+</header>
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Blog:</h3>
-
-    <form class="form new-blog-form">
-      <div class="form-group">
-        <label for="blog-name">blog name:</label>
-        <input class="form-input" type="text" id="blog-name" name="blog-name" />
-      </div>
-      <div class="form-group">
-        <label for="blog-desc">description:</label>
-        <textarea class="form-input" id="blog-desc" name="blog-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{#if blogs.length}}
-  <div class="col-md-6 blog-list">
-    <h3>Current Blogs:</h3>
-
-    {{#each blogs as |blog|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+<div class="col s12 m7 right-align acount-points" style="padding-right: 30px;">
+    <h2 class="header account-points" style="padding-top: 50px; padding-right: 40px;">Points</h2>
+    <div class="card horizontal right">
+      <div class="card-image right-align">
+        <i class="material-icons black-text account-circle right-align" style="font-size: 60px;">star</i>
+    </div>
+      <div class="card-stacked right-align">
+        <div class="card-content right-align">
+          <p>points go here</p>
+        </div>
       </div>
     </div>
-    {{/each}}
   </div>
-  {{/if}}
 </div>
 
-<script src="../public/js/account.js"></script>
+<div class="container center" style="padding-top: 45px;">
+<h1>Weekly Workout</h1>
+</div>
+
+<div class="container table">
+ <table>
+   <!-- Table Header -->
+        <thead>
+          <tr>
+            <td style="font-weight: bolder; padding-left: 20px; font-size: larger;">Day of the week</th>
+              <th style="font-size: larger;padding-left: 200px;">Task</th>
+              <th style="font-size: larger;padding-left: 100px;"></th>
+          </tr>
+        </thead>
+<!-- Table Contents -->
+        <tbody>
+              {{#each rows}}
+          <tr>
+            <td style="font-weight: bolder; padding-left: 60px;">Monday</td>
+            <td><ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{task.id}}</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Red</span>
+                </label>
+                <span>{{task.description}}</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>{{task.id}}</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Red</span>
+                </label><span>{{task.description}}</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>{{task.id}}</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Red</span>
+                </label><span>{{task.description}}</span></div>
+              </li>
+            </ul></td>
+            <td><label>
+                <input type="checkbox"/>
+              </label>
+            </td>
+            <td>
+                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+        {{/each}}
+
+
+{{!-- <script src="../public/js/account.js"></script> --}}
