@@ -2,7 +2,7 @@ const User = require('./User');
 const Healthplan = require('./Healthplan');
 const Routine = require('./Routine');
 const Task = require('./Task');
-// const Success = require('./Success');
+const Win = require('./Win');
 // const Comment = require('./Comment');
 
 User.belongsTo(Healthplan, {
@@ -15,17 +15,9 @@ Routine.belongsTo(Healthplan, {
   foreignKey: 'healthplan_id'
 });
 
-User.belongsToMany(Routine, { through: 'user_completed' });
-Routine.belongsToMany(User, { through: 'user_completed' });
+User.belongsToMany(Routine, { through: Win });
+Routine.belongsToMany(User, { through: Win });
 
-// Success.belongsTo(User, {
-//   foreignKey: 'user_id'
-// });
 
-// Success.hasMany(Comment);
 
-// Comment.belongsTo(Success, {
-//   foreignKey: 'success_id'
-// });
-
-module.exports = { User, Healthplan, Routine, Task };
+module.exports = { User, Healthplan, Routine, Task, Win };
