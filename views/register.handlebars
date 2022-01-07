@@ -1,8 +1,64 @@
 <div class="row">
 <div class="col-md-6">
-    <h2>Register</h2>
+    <h2 class="center" style="font-weight: bolder;">Register</h2>
 
-    <form class="form register-form">
+      <div class="row center">
+    <form class="col s12 form register-form">
+      <div class="row form-group">
+        <div class="input-field form-group col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="name-register" type="text" class="validate">
+          <label for="name-register">Name</label>
+        </div>
+        <div class="input-field form-group col s6">
+          <i class="material-icons prefix">email</i>
+          <input id="email-register" type="email" class="validate">
+          <label for="email-register">Email</label>
+        </div>
+      <div class="row">
+        <div class="input-field form-group col s6">
+          <i class="material-icons prefix">key</i>
+          <input id="password-register" type="password" class="validate">
+          <label for="password-register">Password</label>
+        </div>
+        <div class="row">
+        <div class="input-field form-group col s6">
+  <select class="browser-default" id="plan-register">
+    <option value="" disabled selected>Choose your Wellness Plan</option>
+    <option value="1" id="1">Weight Loss</option>
+    <option value="2" id="2">Build Muscle</option>
+    <option value="3" id="3">Maintain</option>
+  </select>
+        </div>       
+      </div>
+
+          <h2 class="center" style="font-weight: bolder;">Health Questions</h2>
+
+      <div class="row" style="padding-top: 10px;">
+        <div class="input-field form-group col s6">
+    <input placeholder="Height" id="height-register" type="text" class="validate">
+          <label for="height-register">Height</label>
+  </div>
+        <div class="input-field form-group col s6">
+    <input placeholder="Weight" id="weight-register" type="text" class="validate">
+          <label for="weight-register">Weight</label>
+  </div>
+
+  <button class="btn btn-primary blue waves-effect waves-light right form-group" type="submit">Register
+    <i class="material-icons right">send</i>
+  </button>
+  </form>
+
+<br>
+<br>
+<br>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
+
+    {{!-- <form class="form register-form">
       <div class="form-group">
         <label for="name-register">name:</label>
         <input class="form-input" type="text" id="name-register" />
@@ -20,6 +76,6 @@
       </div>
     </form>
   </div>
-</div>
+</div> --}}
 
-<script src="../public/js/register.js"></script>
+<script src="./js/register.js"></script>
