@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Win } = require('../../../models');
 const withAuth = require('../../../utils/auth');
 
-router.post('/Task/:id', withAuth, async (req, res) => {
+router.post('/task/:id', withAuth, async (req, res) => {
   try {
     const newWin = await Win.create({
       ...req.body,

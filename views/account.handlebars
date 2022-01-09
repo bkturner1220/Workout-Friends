@@ -8,14 +8,14 @@
 </header>
 
 <div class="col s12 m7 right-align acount-points" style="padding-right: 30px;">
-    <h2 class="header account-points" style="padding-top: 50px; padding-right: 40px;">Points</h2>
+    <h2 class="header account-points" style="padding-top: 50px; padding-right: 20px;">Points</h2>
     <div class="card horizontal right">
       <div class="card-image right-align">
-        <i class="material-icons black-text account-circle right-align" style="font-size: 60px;">star</i>
+        <i class="material-icons yellow-text account-circle right-align" style="font-size: 60px;">star</i>
     </div>
       <div class="card-stacked right-align">
         <div class="card-content right-align">
-          <p>points go here</p>
+          <h4>246</h4>
         </div>
       </div>
     </div>
@@ -38,31 +38,29 @@
         </thead>
 <!-- Table Contents -->
         <tbody>
-              {{#each tasks as |task|}}
           <tr>
             <td style="font-weight: bolder; padding-left: 60px;">Monday</td>
             <td><ul class="collapsible">
               <li>
-                <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{task.id}}</div>
+                <div class="collapsible-header"><i class="material-icons red">directions_bike</i>Task A </div>
                 <div class="collapsible-body"><label>
-                  <input type="checkbox" />
-                  <span>Red</span>
+                  <input type="checkbox" id="taska_check"/>
+                  <span>Jump rope 2 sets, 5 minutes</span>
                 </label>
-                <span>{{task.description}}</span></div>
               </li>
               <li>
-                <div class="collapsible-header"><i class="material-icons">place</i>{{task.id}}</div>
+                <div class="collapsible-header"><i class="material-icons green">directions_run</i>Task B</div>
                 <div class="collapsible-body"><label>
                   <input type="checkbox" />
-                  <span>Red</span>
-                </label><span>{{task.description}}</span></div>
+                  <span>bench press limit, 10 reps</span>
+                </label>
               </li>
               <li>
-                <div class="collapsible-header"><i class="material-icons">whatshot</i>{{task.id}}</div>
+                <div class="collapsible-header"><i class="material-icons blue">directions_walk</i>Task C</div>
                 <div class="collapsible-body"><label>
                   <input type="checkbox" />
-                  <span>Red</span>
-                </label><span>{{task.description}}</span></div>
+                  <span>Run 2 miles</span>
+                </label>
               </li>
             </ul></td>
             <td><label>
@@ -74,11 +72,150 @@
             </td>
           </tr>
 
+
+          <tr>
+            <td style="font-weight: bolder; padding-left: 60px;">Tuesday</td>
+            <td><ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons red">directions_bike</i>Task A</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>2 sets of 10 squats</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons green">directions_run</i>Task B</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>2 sets of 5 pull ups</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons blue">directions_walk</i>Task C</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>3 sets of 10 pull ups</span>
+                </label>
+              </li>
+            </ul></td>
+            <td><label>
+                <input type="checkbox"/>
+              </label>
+            </td>
+            <td>
+                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="font-weight: bolder; padding-left: 60px;">Wednesday</td>
+            <td><ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons red">directions_bike</i>Task A</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>10 push ups</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons green">directions_run</i>Task B</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>3 sets of 10 pull ups</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons blue">directions_walk</i>Task C</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>4 reps of Sphinx pose, hold 1 minute.</span>
+                </label>
+              </li>
+            </ul></td>
+            <td><label>
+                <input type="checkbox"/>
+              </label>
+            </td>
+            <td>
+                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="font-weight: bolder; padding-left: 60px;">Thursday</td>
+            <td><ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons red">directions_bike</i>Task A</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>8 reps of knees to chest stretch, hold 20 seconds</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons green">directions_run</i>Task B</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Run on treadmill 20 minutes</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons blue">directions_walk</i>Task C</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>20 minutes Cycling or biking</span>
+                </label>
+              </li>
+            </ul></td>
+            <td><label>
+                <input type="checkbox"/>
+              </label>
+            </td>
+            <td>
+                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
+            </td>
+          </tr>
+
+        <tr>
+            <td style="font-weight: bolder; padding-left: 60px;">Friday</td>
+            <td><ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons red">directions_bike</i>Task A</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>Jump rope 2 sets, 5 minutes</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons green">directions_run</i>Task B</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>bench press limit, 10 reps</span>
+                </label>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons blue">directions_walk</i>Task C</div>
+                <div class="collapsible-body"><label>
+                  <input type="checkbox" />
+                  <span>3 sets of 10 burpees</span>
+                </label>
+              </li>
+            </ul></td>
+            <td><label>
+                <input type="checkbox"/>
+              </label>
+            </td>
+            <td>
+                <a class="btn-floating btn-large cyan pulse"><i class="material-icons">group</i></a>
+            </td>
+          </tr>
+
+
         </tbody>
       </table>
     </div>
 
-        {{/each}}
 
+     
+<script src="./js/account.js">
+</script>
 
-{{!-- <script src="../public/js/account.js"></script> --}}

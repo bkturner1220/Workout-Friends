@@ -19,8 +19,7 @@
 
       <ul class="right hide-on-med-and-down navbar" style="padding: 30">
         {{#if logged_in}}
-        <li><a href="account/"style="font-size: 23px";>Dashboard</a></li>
-        <li><a href="blogs/"style="font-size: 23px";>Blog</a></li>
+        <li><a href="/account"style="font-size: 23px";>Dashboard</a></li>
         <li><a class="no-button" id="logout"style="font-size: 23px";>Logout</a></li>
         {{else}}
         <li><a href="/login" style="font-size: 23px;">Login</a></li>
@@ -30,8 +29,7 @@
 
       <ul id="nav-mobile" class="sidenav">
         {{#if logged_in}}
-        <li><a href="blogs/">Blog</a></li>
-        <li><a href="account/">Dashboard</a></li>
+        <li><a href="/account">Dashboard</a></li>
         <li><a class="no-button" id="logout">Logout</a></li>
         {{else}}
         <li><a href="/login">Login</a></li>
@@ -56,11 +54,6 @@
 <br><br>
 
 
-  <div class="page-footer footer orange lighten-1" style="padding-top: 50px;">
-    <div class="container">
-    </div>
-  </div>
-</footer>
 
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
