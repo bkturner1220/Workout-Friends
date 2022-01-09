@@ -1,12 +1,17 @@
 {
   "name": "workout-friends",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "Workout weekly routine with friends via blogs and points",
   "main": "server.js",
+  
   "scripts": {
     "test": "npm run test",
     "seeds": "node seeds/seed.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
